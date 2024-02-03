@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  function clearForm() {
+    document.getElementById("name").value="";
+    document.getElementById("address").value="";
+    document.getElementById("email").value="";  }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="class">Class:</label>
+    <select id="class" name="class">
+        <option>Select Year</option>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Fourth Year</option>
+    </select><br><br>
+    <label for="qualification">Qualification:</label>
+    <select id='qualification' name='qualification'>
+      <option>Select</option>
+      <option>B-Tech</option>
+      <option>S-Tech</option>
+      <option>J-Tech</option>
+     </select><br><br>
+     <label for='email'>Email Address:</label>
+     <input type='email' id='email' name='email'><br><br>
+     <label for='address'>Address:</label>
+     <input type='address' id='address' name='address'><br><br>
+     Upload Photo:<input type ='file' id ='photo' name ='photo'><br></form><br>
+<button type ="submit">
+<a href="Welcome.html">Register</a>
+</button> 
+<button type ="reset"onclick="clearForm()">Clear</button>
+</body>
+</html>
